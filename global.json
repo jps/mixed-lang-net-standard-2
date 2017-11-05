@@ -1,0 +1,9 @@
+{
+  "sdk": {
+    "version": "2.0.2"
+  },
+  "projects" : [
+    "Web",
+    "DataAccess"
+  ]
+}
