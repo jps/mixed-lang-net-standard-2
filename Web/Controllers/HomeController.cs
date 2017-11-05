@@ -23,8 +23,13 @@ namespace MixedLang.Controllers
 
         public IActionResult Test()
         {
-            var returnedName = DataAccess.UserGetter.Get("James");
-            var b = returnedName.Name;
+            //Tuple - 
+            var returnedName1 = DataAccess.UserGetter.GetUserById("James");
+            var name1 = returnedName1.Item1;
+            var age1 = returnedName1.Item2;
+            //Record Type
+            var returnedName2 = DataAccess.UserGetter.Get("James");
+            var b = (returnedName2.Name, returnedName2.Age);
             return View();
         }
     }

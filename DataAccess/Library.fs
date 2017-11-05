@@ -4,3 +4,5 @@ module UserGetter =
     type User = { Name : string; Age : int }
     let Get name =
         {Name = name; Age = 1234}
+    let GetUserById id =
+        ("James", 1234)
