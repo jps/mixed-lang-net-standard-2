@@ -34,7 +34,7 @@
 
 ## Build sln
 
-	not required for .net core v2.0+
+>	not required for .net core v2.0+
 
 ```
 	dotnet restore
