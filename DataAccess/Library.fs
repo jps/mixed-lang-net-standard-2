@@ -1,7 +1,6 @@
 namespace DataAccess
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
-    let interOpSample name =
-        name
+module UserGetter =
+    type User = { Name : string; Age : int }
+    let Get name =
+        {Name = name; Age = 1234}

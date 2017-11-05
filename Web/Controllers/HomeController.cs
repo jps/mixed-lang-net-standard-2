@@ -23,8 +23,8 @@ namespace MixedLang.Controllers
 
         public IActionResult Test()
         {
-            var returnedName = DataAccess.Say.interOpSample("James");
-
+            var returnedName = DataAccess.UserGetter.Get("James");
+            var b = returnedName.Name;
             return View();
         }
     }
